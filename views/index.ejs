@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="searchbox">
+            <form action="/" method="post">
+                <input type="text" name="area" id="area" placeholder="Search">
+                <button type="submit"><i class="fa fa-search buttonicon"></i></button>
+            </form>
+        </div>
+        <% if(locals.name){ %>
+        <div class="weather">
+            <h2 class="city">Weather in <%=name%></h2>
+        </div>
+        <div class="temp"><h1><%= temp %>°C</h1></div>
+        
+        <div class="description">
+            <img src="https://openweathermap.org/img/w/<%= icon%>.png" alt="" class="<%=icon%>"><h4><%= description %></h4></div>
+        <div class="humidity">Humidity : <%= humidity %>%</div>
+        <div class="windspeed">Air-Speed : <%=wind%></div>
+
+        <% }else{ %>
+            <%=error %> <% } %>
+    </div>
+</body>
+</html>

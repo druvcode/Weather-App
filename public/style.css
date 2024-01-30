@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: #000;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.card{
+    background-color:#0000004b;
+    color: white;
+    width:100%;
+    max-width: 420px;
+    border-radius: 2.5%;
+    padding: 2rem;
+    margin: 1rem;
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+form{
+    width: 100%;
+}
+input{
+    width: calc(100% - 80px);
+    height: 2.5rem;
+    background-color: #000000a8;
+    outline: none;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    font-size: large;
+    border-radius: 25px;
+    
+}
+button{
+    color: white;
+    background-color: #000000a8;
+    height: 2.5rem;
+    width:2.5rem;
+    margin: 1rem;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border: none;
+}
+button:hover{
+background-color: #0000002f;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+}
+img{
+    margin: 2px;
+    height: 60px;
+    width: 60px;
+
+}
